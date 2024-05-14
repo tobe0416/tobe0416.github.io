@@ -1,0 +1,169 @@
+<html>
+
+<head>  <!--not show up in the webpage-->
+<title>fanyumeng0416_01</title> <!--icon,keywords...-->
+<link rel="stylesheet" href="E:/HTML文件/CSS/CSS_1.css"><!--CSS文件外部引用,后面再定义的会被覆盖-->
+</head>
+
+<body style="background-color:lightblue;margin:10px 5px 15px 20px"><<!--上右下左页边距 也可以用%，会随着页面大小变 margin-bottom等可单独设置-->
+<div align="center">
+<font size="6" color="white" >《公主日记》</font></div>
+<div align="left">欢迎光临公主的一天~</div>
+
+<h1 id="top">This is my first heading.</h1>
+公主请用餐！
+<font size="5" color="white" face="Times New Roman">This is a new sentence.</font>
+<p><font color=red>公主为什么要用餐？<br><!--换行--></font>因为人人都要用餐，公主是也人，公主是美丽的人、可爱的人、尊贵的人、善良的人、聪明的人，
+公主是美丽的人、可爱的人、尊贵的人、善良的人、聪明的人公主是美丽的人、可爱的人、尊贵的人、善良的人、聪明的人。</p>
+<center><p><font color=blue> This is a new paragraphy</font></p></center>
+
+<hr width=500 color=purple><!--hr：水平线 width是横着的宽度 还有什么呢？？？？-->
+<hr color=orange><!--水平线 width是横着的宽度 还有什么呢？？？？-->
+
+<h1>This is my first heading.</h1>
+<b>公主请学习！</b><!--加粗Bold-->
+<p><mark>公主的学习内容：</mark></p><!--p：分单独一段 mark：高亮-->
+y=x<sup>2</sup> &nbsp  上标用sup <!--&nbsp：空格-->
+y=x<sub>3</sub> &nbsp  下标用sub <!--&nbsp：空格-->
+
+<h2>This is my second heading.</h2>
+<i>公主请沐浴！</i><!--斜体Italic-->
+
+<h3>This is my third heading.</h3>
+<u>公主请护肤！</u><!--下划线Underline-->
+
+<h4>This is my fourth heading.</h4>
+<del>公主请睡觉！</del>
+
+<h5>This is my fifth heading.</h5>
+<mark>公主请起床！</mark>
+
+<h6>This is my sixth heading.</h6>
+公主请化妆！
+
+<hr color=orange><!--直线-->
+
+ <a name="公主笔记"></a>
+<h1><font color="white">《公主笔记》</font></H1>
+<h2 style="color:darkblue">HTML两种典型List：<br></h3>
+①：ol(order)
+<ol><!--好像就是只能123标序号-->
+  <li>Coffee</li>
+      <ol>
+        <li>美式</li>
+        <ul>
+          <li>冰美式</li>
+          <li>热美式</li>
+        </ul>
+
+          <li>拿铁</li>
+          <li>卡布奇诺</li>
+      </ol>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+①：ul(unorder)
+<ul style="list-style-type:upper-alpha"> <!--不规定就是实心圆，可以规定为square,circle,decimal阿拉伯数字,upper-alpha大写字母...-->
+  <li>Coffee</li>
+  <ol>
+        <li>美式</li>
+        <ul style="list-style-type:none">
+           <li>冰美式</li>
+           <li>热美式</li>
+        </ul>
+      <li>拿铁</li>
+      <li>卡布奇诺</li>
+  </ol>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h2>链接到</h2>
+<h4>Ⅰ、链接到另一网页link to another website：<br></h4><!--a：超链接-->
+<a href="https://space.bilibili.com/3537106035018583" target="_">哔哩哔哩 RIIZE主页</a> <br><!--target="_blank"在新页面打开-->
+<a href="https://dictionary.cambridge.org/zhs/" target="_blank">牛津词典</a> <br>
+<a href="secondwebpage.html">子网页</a> <!--一个文件夹下可以直接写文件名--><br>
+<h4>Ⅱ、link to another webpage:<br></h4>
+<a href="mailto:1145537155@qq.com">mail me</a><br>
+<h4>Ⅲ、link to the header of the page（锚站）:<br></h4>
+<a href="#top">top</a><br>
+<a href="#公主笔记">回到笔记起始处</a>
+
+
+<h2>表格</h2>
+<table align=center border=1 cellpadding=5><!--<td>定义表格中的标准单元格;<th>定义表格内的表头单元格;border边框宽度cellpadding单元边沿与其内容之间的空白-->
+  <tr> <th>Title 1</th><th>Title 2</th> </tr><!--加粗方法：td->th，能自动加粗居中;tb不变，加<b></b>-->
+  <tr> <td>20%</td><td>30%</td> </tr>
+  <tr align=center> <td>40%</td><td>70%</td> </tr>
+  <!--tr:table roll  td:-->
+</table>
+
+<h2>Image</h2>
+<center><img src="images/zcc.jpg" alt="郑成灿"height="400"></center><!--还有其他属性-->
+        <img src="zzx.jpg" alt="郑在玹"width=10%><!--不写images/的话，默认在html文件同一文件夹-->
+
+<h2>三种插入样式表的方法：</h2>
+<h3>外部 CSS:在 head部分的link元素内包含对外部样式表文件的引用 <br></h3>
+<!--
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+外部样式表可以在任何文本编辑器中编写，并且必须以 .css 扩展名保存。
+外部 .css 文件不应包含任何 HTML 标签,mystyle.css：
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+-->
+<h3>内部 CSS :在 head部分的style元素中进行定义<br></h3>
+<!--
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+-->
+<h3>行内 CSS <br></h3>
+<!--
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+-->
+<h2>div和span的区别</h2>
+
+<div>
+
+<h3>div:<dr></h3>
+  <div>
+    <img src="images/zcc.jpg" alt="郑成灿"width=20%>
+    <img src="images/zcc.jpg" alt="郑成灿"width=20%>
+    <img src="images/zcc.jpg" alt="郑成灿"width=20%>
+  </div>
+  <img src="images/zcc.jpg" alt="郑成灿"width=20%><br>
+  <h3>span:<br></h3>
+  饱和水汽压E：空气中水汽含量与<b><span style="color:red">温度</span></b>密切相关，当温度一定时，单位体积空气所能容纳的水汽有一定的限度，
+  到达这个限度，空气呈饱和状态。饱和空气的水汽压称为饱和水汽压。
+  水汽压随高度的<font color="orange">升高而减小</font>，饱和水汽压E随温度的升高而增大<!--也行啊-->
+
+<h2>br和p的区别</h2>
+br换行标签:<br>
+Life is still going on<br>
+Life is still going on<br>
+<br>
+p段落标签:
+<p>Life is still going on</p>
+<p>Life is still going on</p>
+
+
+</body>
+</html>
+<!--ctrl+s:save file-->
